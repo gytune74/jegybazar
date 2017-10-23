@@ -1,20 +1,108 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Jegybazár</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="index.html">Home <span
+          class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="esemenyek.html">Események</a>
+        <a class="nav-item nav-link" href="jegyek.html">Jegyek</a>
+        <a class="nav-item nav-link" href="rolunk.html">Rólunk</a>
+        <a class="nav-item nav-link" href="belepes.html">Belépés</a>
+      </div>
+    </div>
+    <form class="form-inline ml-3">
+      <a href="regisztracio.html" class="btn btn-sm align-middle btn-primary"
+         role="button">Regisztráció</a>
+    </form>
+  </div>
+</nav>
+
+<!-- jumbotron -->
+
+<div class="jumbotron py-5">
+  <div class="container text-center">
+    <h1 class="display-4 mb-4">Jegyek bárkitől, bárhol, bármikor!</h1>
+    <p class="lead">Használd a Jegybazárt és csereberélj jegyeket a legjobb bulikra.
+      Elfogyott? Az orrod elől vitték el az utolsót? Ne aggódj, irány a
+      JegyBazár!</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg mt-4 mb-0" href="#" role="button">Nézzük az
+        eseményeket!</a>
+    </p>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<!-- cards -->
+
+<div class="container">
+
+  <div class="card-deck pt-5">
+
+    <div class="col col-md-6 col-lg-4">
+      <div class="index_card text-center">
+        <div class="row justify-content-center">
+          <img class="card-img-top img-fluid calendar" src="img/calendar.png"
+               alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title text-center">Események</h4>
+          <p class="index_text card-text">Itt találod a legtöbb jó bulit,
+            böngéssz bátran és keress vagy adj el jegyeket a barátaidnak, vagy
+            más felhasználóknak.</p>
+          <a href="#" class="btn btn-primary index_btn_card">Események</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-md-6 col-lg-4">
+      <div class="index_card text-center">
+        <div class="row justify-content-center">
+          <img class="card-img-top img-fluid calendar" src="img/ticket.png"
+               alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title text-center">Jegyek</h4>
+          <p class="index_text card-text">Ha sietsz, egyből kezdheted a jegyek
+            böngészésével is. Itt is tudsz keresni az esemény neve vagy
+            időpontja alapján.</p>
+          <a href="#" class="btn btn-primary index_btn_card">Jegyek</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-md-8 mx-md-auto col-lg-4">
+      <div class="index_card text-center col">
+        <div class="row justify-content-center">
+          <img class="card-img-top img-fluid calendar" src="img/user.png"
+               alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Regisztráció</h4>
+          <p class="index_text card-text">Még nem regisztráltál? Akkor gyorsan
+            tedd meg, mert a szolgáltatás csak tagonkak elérhető. Sőt, az újak
+            értékes ajándékot kapnak tőlünk.</p>
+          <a href="regisztracio.html" class="btn btn-primary index_btn_card">Regisztráció</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- footer -->
+
+<footer class="bg-light text-center py-3 sticky-bottom">
+  <div class="container">
+    <p class="m-0">&copy; Company 2017</p>
+  </div>
+</footer>
+
 
